@@ -20,7 +20,7 @@ public enum PaginaEnum {
 		return descricao;
 	}
 	
-	public static List<PaginaEnumDto> listarPaginas() {
+	public static List<PaginaEnumDto> findAll() {
 		List<PaginaEnumDto> paginas = new ArrayList<>();
     	for(PaginaEnum item: PaginaEnum.values()) {
     		paginas.add(PaginaEnumDto.construir(item));

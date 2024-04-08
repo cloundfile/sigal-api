@@ -13,8 +13,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 
 import jakarta.persistence.Enumerated;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import org.inneo.apisistemas.enums.PaginaEnum;
 
 @Getter
@@ -27,9 +25,8 @@ import org.inneo.apisistemas.enums.PaginaEnum;
 public class Parametros extends GenericEntity{
 	private static final long serialVersionUID = 1L;
 	
-	@ManyToOne
-	@JoinColumn(name = "usuario_id")
-	public Usuario usuario;
+	@Column(name = "usuario_id")
+	private Long usuarioID;
 	
 	@Enumerated(EnumType.STRING)
 	@Column(name = "pagina")

@@ -26,7 +26,6 @@ import org.inneo.apisistemas.repository.TokenRep;
 import org.inneo.apisistemas.dtos.UsuarioRegister;
 import org.inneo.apisistemas.repository.UsuarioRep;
 
-
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -152,4 +151,5 @@ public class UsuarioService {
 	public List<RoleEnumDto> roles(){
 		 return Role.roles();
 	}
+	
 }
